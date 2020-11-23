@@ -3,7 +3,6 @@ const cheerio = require("cheerio");
 var columnify = require("columnify");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./config.json");
 
 
 // inside a command, event listener, etc.
