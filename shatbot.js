@@ -511,10 +511,6 @@ client.on("message", async (message) => {
 	  Current: current[14],
 	  Peak: peak[14],
 	  Game: title[14]
-	}, {
-	  Current: current[15],
-	  Peak: peak[15],
-	  Game: title[15]
 	}], {config: {Current: {align: 'right'}, Peak: {align: 'right'}}, columnSplitter: '   '} )
 
 	message.channel.send('```prolog\n'+columns+'```');
