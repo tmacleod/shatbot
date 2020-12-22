@@ -35,7 +35,6 @@ client.on("message", async (message) => {
 	//var args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 	var args = message.content;
 	const command = args.toLowerCase();
-	if (!message.content.startsWith('steam popular') && !message.content.startsWith('twitch popular')) return;
 
 
 
