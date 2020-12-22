@@ -21,6 +21,9 @@ function toLower(x) {
 	return x.toLowerCase();
 }
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 
 
