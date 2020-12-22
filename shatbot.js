@@ -880,6 +880,364 @@ client.on("message", async (message) => {
 
   }  
   
+  if (command === 'twitch streamers' || command === 'twitch channels') {
+
+	 var result = await request.get("https://twitchtracker.com/channels/live");
+	 var $ = cheerio.load(result);
+	 const title = [];
+	 const current = [];
+	 //message.channel.send('Downloading channels...');
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1); 
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(7) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(7) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(8) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(8) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(9) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(9) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(10) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(10) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(11) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(11) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 var result2 = await request.get("https://twitchtracker.com/channels/live?page=2");
+	 $ = cheerio.load(result2);
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-name > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-value > div").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+
+	var columns = columnify([{
+	  Current: current[0],
+	  Name: title[0]
+	}, {
+	  Current: current[1],
+	  Name: title[1]
+	}, {
+	  Current: current[2],
+	  Name: title[2]
+	}, {
+	  Current: current[3],
+	  Name: title[3]
+	}, {
+	  Current: current[4],
+	  Name: title[4]
+	}, {
+	  Current: current[5],
+	  Name: title[5]
+	}, {
+	  Current: current[6],
+	  Name: title[6]
+	}, {
+	  Current: current[7],
+	  Name: title[7]
+	}, {
+	  Current: current[8],
+	  Name: title[8]
+	}, {
+	  Current: current[9],
+	  Name: title[9]
+	}, {
+	  Current: current[10],
+	  Name: title[10]
+	}, {
+	  Current: current[11],
+	  Name: title[11]
+	}, {
+	  Current: current[12],
+	  Name: title[12]
+	}, {
+	  Current: current[13],
+	  Name: title[13]
+	}, {
+	  Current: current[14],
+	  Name: title[14]
+	}], {config: {Current: {align: 'right'}}, columnSplitter: '   '} )
+
+	message.channel.send('```prolog\n'+columns+'```');
+
+
+
+  }
+
+	
+	
 });
 
 
