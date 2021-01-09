@@ -878,7 +878,7 @@ client.on("message", async (message) => {
 
 
   }  
-  
+  /*
   if (command === 'twitch streamers' || command === 'twitch channels') {
 
 	 var result = await request.get("https://twitchtracker.com/channels/live");
@@ -1234,7 +1234,7 @@ client.on("message", async (message) => {
 
 
   }
-
+*/
 	
 	
 });
