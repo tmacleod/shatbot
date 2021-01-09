@@ -878,7 +878,6 @@ client.on("message", async (message) => {
 
 
   }  
-  /*
   if (command === 'twitch streamers' || command === 'twitch channels') {
 
 	 var result = await request.get("https://twitchtracker.com/channels/live");
@@ -887,7 +886,7 @@ client.on("message", async (message) => {
 	 const current = [];
 	 //message.channel.send('Downloading channels...');
 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(1) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1); 
@@ -895,7 +894,7 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(1) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -907,7 +906,7 @@ client.on("message", async (message) => {
 	 });
 
 	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(2) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1);
@@ -915,7 +914,7 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(2) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -926,7 +925,7 @@ client.on("message", async (message) => {
 	   }
 	 });
 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(3) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1);
@@ -934,7 +933,7 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(3) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -945,7 +944,7 @@ client.on("message", async (message) => {
 	   }
 	 });
 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(4) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1);
@@ -953,87 +952,7 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(7) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(7) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(8) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(8) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(9) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(9) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(4) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -1044,7 +963,7 @@ client.on("message", async (message) => {
 	   }
 	 });
 	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(10) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(5) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1);
@@ -1052,7 +971,26 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(10) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(5) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#channels > tbody > tr:nth-child(6) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(6) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -1063,8 +1001,7 @@ client.on("message", async (message) => {
 	   }
 	 });
 	 
-	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(11) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(7) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1);
@@ -1072,86 +1009,7 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(11) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 var result2 = await request.get("https://twitchtracker.com/channels/live?page=2");
-	 $ = cheerio.load(result2);
-
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(2) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(3) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(4) > div.ri-value > div").each((index, element) => {
-	   try {
-		   const c1 = $(element).text();
-		   const cnum = Number(c1);
-		   const ccom = numberWithCommas(cnum);
-		   current.push(ccom);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-name > a").each((index, element) => {
-	   try {
-		   const t1 = $(element).text();
-		   title.push(t1);
-	   } catch (error) {
-		   message.channel.send('I have bath please wait 30 seconds');
-	   }
-	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(5) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(7) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -1162,7 +1020,7 @@ client.on("message", async (message) => {
 	   }
 	 });
 	 
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-name > a").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(8) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
 		   title.push(t1);
@@ -1170,7 +1028,140 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 $("#content-wrapper > div.container.ranked-list > div > div.col-md-9 > div:nth-child(6) > div.ri-value > div").each((index, element) => {
+	 $("#channels > tbody > tr:nth-child(8) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#channels > tbody > tr:nth-child(9) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(9) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#channels > tbody > tr:nth-child(10) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(10) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#channels > tbody > tr:nth-child(11) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(11) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#channels > tbody > tr:nth-child(12) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(12) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#channels > tbody > tr:nth-child(13) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(13) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
+	 $("#channels > tbody > tr:nth-child(14) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(14) > td:nth-child(5) > span").each((index, element) => {
+	   try {
+		   const c1 = $(element).text();
+		   const cnum = Number(c1);
+		   const ccom = numberWithCommas(cnum);
+		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#channels > tbody > tr:nth-child(15) > td:nth-child(3) > a").each((index, element) => {
+	   try {
+		   const t1 = $(element).text();
+		   title.push(t1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 $("#channels > tbody > tr:nth-child(15) > td:nth-child(5) > span").each((index, element) => {
 	   try {
 		   const c1 = $(element).text();
 		   const cnum = Number(c1);
@@ -1228,14 +1219,16 @@ client.on("message", async (message) => {
 	  Current: current[14],
 	  Name: title[14]
 	}], {config: {Current: {align: 'right'}}, columnSplitter: '   '} )
+	
+	if (current.includes()) return;
 
+
+	
 	message.channel.send('```prolog\n'+columns+'```');
 
 
 
   }
-*/
-	
 	
 });
 
