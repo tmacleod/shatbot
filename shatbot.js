@@ -1243,8 +1243,8 @@ var roleGame = {
         name: "apex",
         id: '705248411141668944'
     },
-    "PlayerUnknown's Battlegrounds": {
-        name: "pubg",
+    "PUBG": {
+        name: "playerunknown's battlegrounds",
         id: '701519891655688212'
     },
     "World of Warcraft": {
