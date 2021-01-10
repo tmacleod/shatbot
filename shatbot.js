@@ -1243,7 +1243,7 @@ var roleGame = {
         name: "apex",
         id: '705248411141668944'
     },
-    "PUBG": {
+    "PLAYERUNKNOWN'S BATTLEGROUNDS": {
         name: "playerunknown's battlegrounds",
         id: '701519891655688212'
     },
@@ -1251,7 +1251,7 @@ var roleGame = {
         name: "world of warcraft",
         id: '797912768854491146'
     },
-    "Valorant": {
+    "VALORANT": {
         name: "valorant",
         id: '701517336590549053'
     },
