@@ -2,7 +2,7 @@ const request = require("request-promise");
 const cheerio = require("cheerio");
 var columnify = require("columnify");
 const Discord = require("discord.js");
-const client = new Discord.Client();
+var client = new Discord.Client();
 
 
 // inside a command, event listener, etc.
