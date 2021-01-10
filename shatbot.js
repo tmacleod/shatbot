@@ -1290,7 +1290,7 @@ function collectRoleIds() {
     client.guilds.cache.forEach(function(server) {
         server.roles.cache.forEach(function(role) {
             for (var gKey in roleGame) {
-                if (prefix + gKey === role.name) {
+                if (gKey === role.name) {
                     roleGame[gKey]['id'] = role.id;
                 }
             }
