@@ -1235,49 +1235,17 @@ client.on("message", async (message) => {
 let prefix = "gameroles_"; //BOT PREFIX
 
 var roleGame = {
-    "VALORANT": {
-        name: "valorant", //NAME ROLE TOLOWERCASE
-        id: '735224527851618396' //ROLE ID
+    "Warzone": {
+        name: "warzone", //NAME ROLE TOLOWERCASE
+        id: '769028267436015616' //ROLE ID
     },
-    "League of Legends": {
-        name: "league of legends",
-        id: '735224422796886018'
+    "Apex": {
+        name: "apex",
+        id: '705248411141668944'
     },
-    "Rust": {
-        name: "rust",
-        id: '736050308895080548'
-    },
-    "Minecraft": {
-        name: "minecraft",
-        id: "735224613562482799"
-    },
-    "Stardew Valley": {
-        name: "Stardew Valley",
-        id: "735673058165129345"
-    },
-    "Counter-Strike: Global Offensive": {
-        name: "counter-strike: global offensive",
-        id: "735692750967668841"
-    },
-    "Visual Studio Code": {
-        name: "visual studio code",
-        id: "736053509992218632"
-    },
-    "DBD": {
-        name: "dead by daylight",
-        id: "736338382178746389"
-    },
-    "Dota": {
-        name: "dota 2",
-        id: "736392959850709084"
-    },
-    "Among Us": {
-        name: "among us",
-        id: "755044556038340722"
-    },
-    "Fall Guys": {
-        name: "fall guys",
-        id: "755053364047380571"
+    "PUBG": {
+        name: "pubg",
+        id: '701519891655688212'
     }
 
 };
