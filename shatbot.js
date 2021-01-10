@@ -1245,7 +1245,7 @@ var roleGame = {
     },
     "PLAYERUNKNOWN'S BATTLEGROUNDS": {
         name: "playerunknown's battlegrounds",
-        id: '701519891655688212'
+        id: '797975592729444402'
     },
     "World of Warcraft": {
         name: "world of warcraft",
