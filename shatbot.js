@@ -1232,7 +1232,7 @@ client.on("message", async (message) => {
 	
 });
 
-let prefix = "gameroles_"; //BOT PREFIX
+//let prefix = "gameroles_"; //BOT PREFIX
 
 var roleGame = {
     "Warzone": {
