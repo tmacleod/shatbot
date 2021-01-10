@@ -1366,14 +1366,14 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
 
 
     console.log('\n########################################################################################################################\n');
-    console.log('Atividade antiga: ' + oldActivities + '\nNova atividade: ' + newActivities + '\nUser: ' + newPresence.member.displayName);
+    console.log('Old activities: ' + oldActivities + '\nNew activities: ' + newActivities + '\nUser: ' + newPresence.member.displayName);
 
     var oldGame = registeredGame(oldActivities);
     if (oldGame) {
         newPresence.member.roles.remove(roleGame[oldGame].id).catch(e => {
             console.error(e)
         });
-        console.log('Removido Role');
+        console.log('Remove Role');
     }
 
     var gameId = registeredGame(newActivities);
@@ -1381,7 +1381,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
         newPresence.member.roles.add(roleGame[gameId].id).catch(e => {
             console.error(e)
         });
-        console.log('Atribuido Role');
+        console.log('Add Role');
     }
 
 
