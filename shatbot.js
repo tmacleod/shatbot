@@ -1236,11 +1236,11 @@ client.on("message", async (message) => {
 
 var roleGame = {
     "Warzone": {
-        name: "warzone", //NAME ROLE TOLOWERCASE
+        name: "call of duty®: modern warfare®", //NAME ROLE TOLOWERCASE
         id: '769028267436015616' //ROLE ID
     },
     "Apex": {
-        name: "apex",
+        name: "apex legends",
         id: '705248411141668944'
     },
     "PUBG": {
