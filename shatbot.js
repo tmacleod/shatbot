@@ -1247,10 +1247,6 @@ var roleGame = {
         name: "playerunknown's battlegrounds",
         id: "701519891655688212" //dopepugs
     },
-    "PLAYERUNKNOWN'S BATTLEGROUNDS": {
-        name: "playerunknown's battlegrounds",
-        id: "797975592729444402" //my server
-    },
     "World of Warcraft": {
         name: "world of warcraft",
         id: "797912768854491146"
