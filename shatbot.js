@@ -1237,47 +1237,47 @@ client.on("message", async (message) => {
 var roleGame = {
     "Warzone": {
         name: "call of duty®: modern warfare®", //NAME ROLE TOLOWERCASE
-        id: '769028267436015616' //ROLE ID
+        id: "769028267436015616" //ROLE ID
     },
     "Apex": {
         name: "apex legends",
-        id: '705248411141668944'
+        id: "705248411141668944"
     },
     "PUBG": {
         name: "playerunknown's battlegrounds",
-        id: '701519891655688212' //dopepugs
+        id: "701519891655688212" //dopepugs
     },
     "PLAYERUNKNOWN'S BATTLEGROUNDS": {
         name: "playerunknown's battlegrounds",
-        id: '797975592729444402' //my server
+        id: "797975592729444402" //my server
     },
     "World of Warcraft": {
         name: "world of warcraft",
-        id: '797912768854491146'
+        id: "797912768854491146"
     },
     "VALORANT": {
         name: "valorant",
-        id: '701517336590549053'
+        id: "701517336590549053"
     },
     "Dota 2": {
         name: "dota 2",
-        id: '797913309445357578'
+        id: "797913309445357578"
     },
     "Overwatch": {
         name: "overwatch",
-        id: '797913431813390347'
+        id: "797913431813390347"
     },
     "Unreal Tournament": {
         name: "unreal tournament",
-        id: '797913511949762600'
+        id: "797913511949762600"
     },
     "Rust": {
         name: "rust",
-        id: '797913715352928316'
+        id: "797913715352928316"
     },
     "Other Games": {
         name: "other games",
-        id: '797913813910814790'
+        id: "797913813910814790"
     }
 	
 
