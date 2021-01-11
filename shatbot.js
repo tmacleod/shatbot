@@ -1274,6 +1274,18 @@ var roleGame = {
     "Rust": {
         name: "rust",
         id: "797913715352928316"
+    },
+    "Tarkov": {
+        name: "escape from tarkov",
+        id: "798028849526865922"
+    },
+    "Rocket League": {
+        name: "rocket league",
+        id: "798029455922561045"
+    },
+    "CS:GO": {
+        name: "counter-strike: global offensive",
+        id: "798030131302105108"
     }
 };
 
