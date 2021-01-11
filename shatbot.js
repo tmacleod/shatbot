@@ -1267,18 +1267,9 @@ var roleGame = {
         name: "unreal tournament",
         id: "797913511949762600"
     },
-    "UT4": {
-        name: "unrealtournament",
-        id: "798011918295891978"
-    },
     "Rust": {
         name: "rust",
         id: "797913715352928316"
-    },
-    "Other Games": {
-        name: "diabotical",
-        name: "fall guys: ultimate knockout",
-        id: "797913813910814790"
     }
 };
 
