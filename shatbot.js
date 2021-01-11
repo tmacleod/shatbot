@@ -1251,7 +1251,7 @@ var roleGame = {
         name: "world of warcraft",
         id: "797912768854491146"
     },
-    "VALORANT": {
+    "Valorant": {
         name: "valorant",
         id: "701517336590549053"
     },
@@ -1263,16 +1263,64 @@ var roleGame = {
         name: "overwatch",
         id: "797913431813390347"
     },
-    "Unreal Tournament": {
+    "UT99": {
         name: "unreal tournament",
         id: "797913511949762600"
+    },
+    "UT4": {
+        name: "unrealtournament",
+        id: "798011918295891978"
     },
     "Rust": {
         name: "rust",
         id: "797913715352928316"
     },
     "Other Games": {
-        name: "other games",
+        name: "sea of thieves",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "final fantasy xiv",
+        id: "797913813910814790"
+    },
+    "Other Games": {
+        name: "league of legends",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "sea of thieves",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "counter-strike: global offensive",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "cyberpunk 2077",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "escape from tarkov",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "rainbow six siege",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "team fortress 2",
+        id: "797913813910814790"
+    },
+
+    "Other Games": {
+        name: "diabotical",
         id: "797913813910814790"
     }
 	
