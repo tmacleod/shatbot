@@ -1247,10 +1247,14 @@ var roleGame = {
         name: "playerunknown's battlegrounds",
         id: "701519891655688212" //dopepugs
     },
-    "World of Warcraft": {
+    "Shadowlands": {
         name: "world of warcraft",
         id: "797912768854491146"
     },
+    "Wow Classic": {
+        name: "world of warcraft classic",
+        id: "798018214323421194"
+    },	
     "Valorant": {
         name: "valorant",
         id: "701517336590549053"
