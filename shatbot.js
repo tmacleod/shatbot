@@ -1298,7 +1298,6 @@ var roleGame = {
         name: "counter-strike: global offensive",
         id: "797913813910814790"
     },
-
     "Other Games": {
         name: "cyberpunk 2077",
         id: "797913813910814790"
@@ -1322,9 +1321,16 @@ var roleGame = {
     "Other Games": {
         name: "diabotical",
         id: "797913813910814790"
-    }
-	
+    },
+    "Other Games": {
+        name: "rocket league",
+        id: "797913813910814790"
+    },
 
+    "Other Games": {
+        name: "fall guys: ultimate knockout",
+        id: "797913813910814790"
+    }
 };
 
 
