@@ -1276,58 +1276,7 @@ var roleGame = {
         id: "797913715352928316"
     },
     "Other Games": {
-        name: "sea of thieves",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
-        name: "final fantasy xiv",
-        id: "797913813910814790"
-    },
-    "Other Games": {
-        name: "league of legends",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
-        name: "sea of thieves",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
-        name: "counter-strike: global offensive",
-        id: "797913813910814790"
-    },
-    "Other Games": {
-        name: "cyberpunk 2077",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
-        name: "escape from tarkov",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
-        name: "rainbow six siege",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
-        name: "team fortress 2",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
         name: "diabotical",
-        id: "797913813910814790"
-    },
-    "Other Games": {
-        name: "rocket league",
-        id: "797913813910814790"
-    },
-
-    "Other Games": {
         name: "fall guys: ultimate knockout",
         id: "797913813910814790"
     }
