@@ -1243,12 +1243,10 @@ var roleGame = {
         name: "apex legends",
         id: "705248411141668944"
     },
-/*
     "PUBG": {
         name: "playerunknown's battlegrounds",
         id: "701519891655688212" //dopepugs
     },
-*/
     "PLAYERUNKNOWN'S BATTLEGROUNDS": {
         name: "playerunknown's battlegrounds",
         id: "797975592729444402" //my server
