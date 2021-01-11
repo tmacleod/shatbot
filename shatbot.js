@@ -1255,7 +1255,7 @@ var roleGame = {
         name: "valorant",
         id: "701517336590549053"
     },
-    "Dota 2": {
+    "Dota": {
         name: "dota 2",
         id: "797913309445357578"
     },
