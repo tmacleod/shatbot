@@ -1231,7 +1231,7 @@ client.on("message", async (message) => {
   }
 	
 });
-
+/*
 //let prefix = "gameroles_"; //BOT PREFIX
 
 var roleGame = {
@@ -1403,6 +1403,6 @@ client.on('ready', () => {
 
     collectRoleIds();
 });
-
+*/
 
 client.login(process.env.BOT_TOKEN);
