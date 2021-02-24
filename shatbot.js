@@ -884,6 +884,7 @@ client.on("message", async (message) => {
 	 var $ = cheerio.load(result);
 	 const title = [];
 	 const current = [];
+	 const game = [];
 	 //message.channel.send('Downloading channels...');
 
 	 $("#channels > tbody > tr:nth-child(1) > td:nth-child(3) > a").each((index, element) => {
@@ -905,6 +906,14 @@ client.on("message", async (message) => {
 	   }
 	 });
 
+	$("#channels > tbody > tr:nth-child(1) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 
 	 $("#channels > tbody > tr:nth-child(2) > td:nth-child(3) > a").each((index, element) => {
 	   try {
@@ -920,6 +929,15 @@ client.on("message", async (message) => {
 		   const cnum = Number(c1);
 		   const ccom = numberWithCommas(cnum);
 		   current.push(ccom);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+	 
+	 $("#channels > tbody > tr:nth-child(2) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
 	   } catch (error) {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
@@ -944,6 +962,15 @@ client.on("message", async (message) => {
 	   }
 	 });
 
+	 $("#channels > tbody > tr:nth-child(3) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
+
 	 $("#channels > tbody > tr:nth-child(4) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -962,7 +989,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
+	 $("#channels > tbody > tr:nth-child(4) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(5) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -981,7 +1015,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-
+	 $("#channels > tbody > tr:nth-child(5) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(6) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1000,7 +1041,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
+	 $("#channels > tbody > tr:nth-child(6) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(7) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1019,7 +1067,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
+	 $("#channels > tbody > tr:nth-child(7) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(8) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1038,7 +1093,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
+	 $("#channels > tbody > tr:nth-child(8) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(9) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1057,7 +1119,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
+	 $("#channels > tbody > tr:nth-child(9) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(10) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1076,7 +1145,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-
+	 $("#channels > tbody > tr:nth-child(10) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(11) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1095,7 +1171,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-
+	 $("#channels > tbody > tr:nth-child(11) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(12) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1114,7 +1197,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-
+	 $("#channels > tbody > tr:nth-child(12) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(13) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1133,7 +1223,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-
+	 $("#channels > tbody > tr:nth-child(13) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(14) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1152,7 +1249,14 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-	 
+	 $("#channels > tbody > tr:nth-child(14) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 	 $("#channels > tbody > tr:nth-child(15) > td:nth-child(3) > a").each((index, element) => {
 	   try {
 		   const t1 = $(element).text();
@@ -1171,54 +1275,76 @@ client.on("message", async (message) => {
 		   message.channel.send('I have bath please wait 30 seconds');
 	   }
 	 });
-
+	 $("#channels > tbody > tr:nth-child(15) > td:nth-child(3) > div").each((index, element) => {
+	   try {
+		   const g1 = $(element).text();
+		   game.push(g1);
+	   } catch (error) {
+		   message.channel.send('I have bath please wait 30 seconds');
+	   }
+	 });
 
 	var columns = columnify([{
 	  Current: current[0],
-	  Name: title[0]
+	  Name: title[0],
+	  Game: game[0]
 	}, {
 	  Current: current[1],
-	  Name: title[1]
+	  Name: title[1],
+	  Game: game[1]
 	}, {
 	  Current: current[2],
-	  Name: title[2]
+	  Name: title[2],
+	  Game: game[2]
 	}, {
 	  Current: current[3],
-	  Name: title[3]
+	  Name: title[3],
+	  Game: game[3]
 	}, {
 	  Current: current[4],
-	  Name: title[4]
+	  Name: title[4],
+	  Game: game[4]
 	}, {
 	  Current: current[5],
-	  Name: title[5]
+	  Name: title[5],
+	  Game: game[5]
 	}, {
 	  Current: current[6],
-	  Name: title[6]
+	  Name: title[6],
+	  Game: game[6]
 	}, {
 	  Current: current[7],
-	  Name: title[7]
+	  Name: title[7],
+	  Game: game[7]
 	}, {
 	  Current: current[8],
-	  Name: title[8]
+	  Name: title[8],
+	  Game: game[8]
 	}, {
 	  Current: current[9],
-	  Name: title[9]
+	  Name: title[9],
+	  Game: game[9]
 	}, {
 	  Current: current[10],
-	  Name: title[10]
+	  Name: title[10],
+	  Game: game[10]
 	}, {
 	  Current: current[11],
-	  Name: title[11]
+	  Name: title[11],
+	  Game: game[11]
 	}, {
 	  Current: current[12],
-	  Name: title[12]
+	  Name: title[12],
+	  Game: game[12]
 	}, {
 	  Current: current[13],
-	  Name: title[13]
+	  Name: title[13],
+	  Game: game[13]
 	}, {
 	  Current: current[14],
-	  Name: title[14]
-	}], {config: {Current: {align: 'right'}}, columnSplitter: '   '} )
+	  Name: title[14],
+	  Game: game[14]
+	}], {config: {Current: {align: 'right'}, Name: {align: 'right'}}, columnSplitter: '   '} )
 	
 	if (current.includes()) return;
 
