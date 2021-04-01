@@ -1,4 +1,4 @@
-const request = require("request-promise");
+var request = require("cloudscraper");
 const cheerio = require("cheerio");
 var columnify = require("columnify");
 const Discord = require("discord.js");
