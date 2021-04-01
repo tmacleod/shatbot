@@ -9,6 +9,7 @@
   "main": "shatbot.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "cloudscraper": "^4.6.0",
     "columnify": "^1.5.4",
     "discord.js": "^12.5.0",
     "request": "^2.88.2",
