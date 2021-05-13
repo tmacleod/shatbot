@@ -523,8 +523,6 @@ client.on("message", async (message) => {
   
   if (command === 'twitch popular' || command === 'Twitch Popular') {
 
-	 var fakeResult = await request.get("https://twitchtracker.com/games/live"); //Fake result to get through captcha
-	 var fakeQuery = cheerio.load(fakeResult); //Fake load to get through captcha
 	 var result = await request.get("https://twitchtracker.com/games/live");
 	 var $ = cheerio.load(result);
 	 const title = [];
@@ -882,8 +880,6 @@ client.on("message", async (message) => {
   }  
   if (command === 'twitch streamers' || command === 'twitch channels') {
 
-	 var fakeResult = await request.get("https://twitchtracker.com/games/live"); //Fake result to get through captcha
-	 var fakeQuery = cheerio.load(fakeResult); //Fake load to get through captcha
 	 var result = await request.get("https://twitchtracker.com/channels/live");
 	 var $ = cheerio.load(result);
 	 const title = [];
